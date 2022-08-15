@@ -46,6 +46,9 @@ const showPointer = ref(false);
 const pointer = ref(0);
 const emit = defineEmits(["select"])
 
+
+console.log("not hello");
+
 watch(pointer, (value) => {
     const index = Math.ceil(value / (300 / amounts.value.length));
     if(index < 0 || index > amounts.value.length) return;
