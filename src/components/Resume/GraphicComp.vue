@@ -46,7 +46,7 @@ const showPointer = ref(false);
 const pointer = ref(0);
 const emit = defineEmits(["select"])
 
-console.log("hello");
+
 
 watch(pointer, (value) => {
     const index = Math.ceil(value / (300 / amounts.value.length));
@@ -93,6 +93,8 @@ const points = computed(() => {
     }, `0, ${amountToPixels(amounts.value.length ? amounts.value[0] : 0)}`);
 });
 
+console.log("end")
+
 </script>
 
 <style scoped>
@@ -104,3 +106,5 @@ p {
   text-align: center;
 }
 </style>
+
+
